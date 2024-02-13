@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "pr": ["Protest Riot"]
+      },
+      colors: {
+        "black": "#323232",
+        "white": "#FFFFFF"
+      }
+    }
   },
   plugins: [],
 };
