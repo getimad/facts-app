@@ -1,11 +1,12 @@
-import './App.css'
+import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <>
-      <h1>Facts App</h1>
-    </>
-  )
+    <div className="p-5 mx-auto max-w-6xl">
+      <Header />
+    </div>
+  );
 }
 
-export default App
+export default App;
