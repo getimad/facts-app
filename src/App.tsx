@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import FactContainer from "./components/FactContainer";
+import FactShare from "./components/FactShare";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <FactContainer />
         </main>
       </div>
+      <FactShare />
     </div>
   );
 }
