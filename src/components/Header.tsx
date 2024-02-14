@@ -7,6 +7,7 @@ function Header() {
         flex
         justify-between
         font-pr
+        mb-12
       ">
       <img
         src={whiteLogo}
