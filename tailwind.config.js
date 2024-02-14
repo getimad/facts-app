@@ -4,13 +4,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "pr": ["Protest Riot"]
+        pr: ["Protest Riot"],
+        inter: ["Inter"],
       },
       colors: {
-        "black": "#323232",
-        "white": "#FFFFFF"
-      }
-    }
+        black: "#323232",
+        white: "#FFFFFF",
+      },
+    },
   },
   plugins: [],
 };
