@@ -6,6 +6,7 @@ function Header() {
       className="
         flex
         justify-between
+        font-pr
       ">
       <img
         src={whiteLogo}
