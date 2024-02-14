@@ -11,7 +11,7 @@ function FactShare({ isFactShareOpen, setIsFactShareOpen }: Props) {
   return (
     <div className={`fixed top-0 left-0 h-screen w-screen backdrop-blur-sm bg-[#001600]/50 flex items-center justify-center ${!isFactShareOpen ? "hidden" : ""}`} >
       <div className="z-10 h-screen w-screen fixed" onClick={() => setIsFactShareOpen(false)}></div>
-      <div className="bg-green-900 z-20 h-80 w-[40rem] rounded-xl border border-green-800 p-5 shadow-inner">
+      <div className="bg-green-900 z-20 h-[25rem] w-[40rem] rounded-xl border border-green-800 p-5 shadow-inner">
         <div className="flex justify-between relative">
           <h3 className="text-4xl font-bold capitalize mb-5">
             Share a fact
@@ -20,7 +20,8 @@ function FactShare({ isFactShareOpen, setIsFactShareOpen }: Props) {
             <CloseIcon />
           </button>
         </div>
-        <textarea className="rounded-xl w-full h-40 text-xl text-black p-3 font-bold mb-1"></textarea>
+        <textarea className="rounded-xl w-full h-40 text-ml text-black p-3 font-bold mb-3"></textarea>
+        <input type="text" placeholder="Add link of the fact" className="h-12 mb-3 rounded-xl w-full p-3 text-black font-bold text-md" />
         <div className="flex justify-between">
           <div className="relative">
             <select className="bg-green-900 border-2 border-white font-semibold px-5 py-2 pr-14 rounded-full appearance-none">
