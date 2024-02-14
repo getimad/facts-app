@@ -22,9 +22,11 @@ function App() {
         <main className="h-full flex-grow">
           <FactContainer />
         </main>
+        <div className={`fixed h-screen w-screen top-0 left-0 transition-transform duration-150 ease-in-out transform ${isFactShareOpen ? 'scale-100' : 'scale-0'}`}>
+          <FactShare isFactShareOpen={isFactShareOpen} setIsFactShareOpen={setIsFactShareOpen} />
+        </div>
       </div>
-      <FactShare isFactShareOpen={isFactShareOpen} setIsFactShareOpen={setIsFactShareOpen} />
-    </div>
+    </div >
   );
 }
 
