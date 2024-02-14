@@ -1,10 +1,16 @@
 import DownIcon from "../assets/icons/DownIcon";
 import PlusIcon from "../assets/icons/PlusIcon";
 
-function FactShare() {
+interface Props {
+  isFactShareOpen: boolean;
+  setIsFactShareOpen: (isOpen: boolean) => void;
+}
+
+function FactShare({ isFactShareOpen, setIsFactShareOpen }: Props) {
   return (
-    <div className="fixed top-0 left-0 h-screen w-screen backdrop-blur-sm bg-white/10 flex items-center justify-center">
-      <div className="bg-green-900 h-80 w-[40rem] rounded-xl border border-green-800 p-5">
+    <div className={`fixed top-0 left-0 h-screen w-screen backdrop-blur-sm bg-[#001600]/50 flex items-center justify-center ${!isFactShareOpen ? "hidden" : ""}`} >
+      <div className="z-10 h-screen w-screen fixed" onClick={() => setIsFactShareOpen(false)}></div>
+      <div className="bg-green-900 z-20 h-80 w-[40rem] rounded-xl border border-green-800 p-5 shadow-inner">
         <h3 className="text-4xl font-bold capitalize mb-5">
           Share a fact
         </h3>
@@ -29,7 +35,7 @@ function FactShare() {
           </button>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

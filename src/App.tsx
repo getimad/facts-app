@@ -2,14 +2,17 @@ import "./App.css";
 import Header from "./components/Header";
 import FactContainer from "./components/FactContainer";
 import FactShare from "./components/FactShare";
+import { useState } from "react";
 
 function App() {
+  const [isFactShareOpen, setIsFactShareOpen] = useState(false);
+
   return (
     <div className="
       p-5
       mx-auto
       max-w-6xl">
-      <Header />
+      <Header setIsFactShareOpen={(isOpen: boolean) => setIsFactShareOpen(isOpen)} />
       <div className="
         flex font-inter">
         <aside className="
@@ -20,7 +23,7 @@ function App() {
           <FactContainer />
         </main>
       </div>
-      <FactShare />
+      <FactShare isFactShareOpen={isFactShareOpen} setIsFactShareOpen={setIsFactShareOpen} />
     </div>
   );
 }

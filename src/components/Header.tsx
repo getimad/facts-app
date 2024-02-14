@@ -1,6 +1,10 @@
 import whiteLogo from "../assets/logos/logo-white.svg";
 
-function Header() {
+interface Props {
+  setIsFactShareOpen: (isOpen: boolean) => void;
+}
+
+function Header({ setIsFactShareOpen }: Props) {
   return (
     <header
       className="
@@ -24,8 +28,8 @@ function Header() {
           duration-300
           capitalize
           hover:border-green-400
-          hover:text-green-400
-        ">
+          hover:text-green-400"
+        onClick={() => setIsFactShareOpen(true)}>
         share a fact
       </button>
     </header>
