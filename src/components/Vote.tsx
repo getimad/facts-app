@@ -1,6 +1,6 @@
 import DownIcon from "../assets/icons/DownIcon";
 import UpIcon from "../assets/icons/UpIcon";
-import useFactStore from "../store";
+import { useFactStore } from "../store";
 
 interface Props {
   id: number;

@@ -2,7 +2,7 @@ import { FormEvent, useState } from "react";
 import CloseIcon from "../assets/icons/CloseIcon";
 import DownIcon from "../assets/icons/DownIcon";
 import PlusIcon from "../assets/icons/PlusIcon";
-import useFactStore from "../store";
+import { useFactStore } from "../store";
 import Fact from "../interfaces/Fact";
 
 interface Props {
