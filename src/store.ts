@@ -15,14 +15,14 @@ const useFactStore = create<FactStore>((set) => ({
       content: "Web Development is Only About Coding.",
       voteCount: -2,
       source: "#",
-      category: "techonology",
+      category: "technology",
     },
     {
       id: 2,
       content: "Web Development is Easy.",
       voteCount: -19,
       source: "#",
-      category: "techonology",
+      category: "technology",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const useFactStore = create<FactStore>((set) => ({
         "Web development is a field that is constantly evolving. New technologies, frameworks, and tools are introduced regularly, and developers need to keep learning to stay up-to-date.",
       voteCount: 57,
       source: "#",
-      category: "techonology",
+      category: "technology",
     },
   ],
   setFact: (fact: Fact) => set((state) => ({ facts: [...state.facts, fact] })),
@@ -48,4 +48,15 @@ const useFactStore = create<FactStore>((set) => ({
     })),
 }));
 
-export default useFactStore;
+interface CategoryStore {
+  category: string;
+  setCategory: (category: string) => void;
+}
+
+const useCategoryStore = create<CategoryStore>((set) => ({
+  category: "all",
+  setCategory: (category: string) =>
+    set((state) => ({ ...state, category: category })),
+}));
+
+export { useFactStore, useCategoryStore };
