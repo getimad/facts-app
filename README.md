@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+# Facts App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Facts App** is a simple SPA, lets you contribute interesting facts to the community. Upvote or downvote facts and explore various categories!
 
-Currently, two official plugins are available:
+## Built With
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + TypeScript
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js
+- npm
 
-- Configure the top-level `parserOptions` property like this:
+## Screenshots
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+_Empty_
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Getting Started
+
+To get started, follow these steps:
+
+1. Clone this repository to your local machine.
+2. Enter the folder `cd facts`.
+3. Run `npm install` to install the required dependencies.
+4. Run `npm run dev` to start the web server.
+
+## Upcoming Enhancements
+
+_Empty_
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact Me
+
+If you have any questions, feel free to reach out to me at:
+
+<a href="https://www.linkedin.com/in/getimad/" target="_blank">
+  <img alt="Static Badge" src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin">
+</a>
