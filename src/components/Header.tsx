@@ -7,7 +7,7 @@ function Header() {
         src={whiteLogo}
         className="h-8 w-8"
       />
-      <div className="bg-white blur-2xl w-8 h-8 rounded-full absolute"></div>
+      <div className="bg-white blur-2xl hover:blur-xl duration-300 w-8 h-8 rounded-full absolute"></div>
     </header>
   );
 }
