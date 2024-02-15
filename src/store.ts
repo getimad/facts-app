@@ -33,7 +33,7 @@ const useFactStore = create<FactStore>((set) => ({
       category: "technology",
     },
   ],
-  setFact: (fact: Fact) => set((state) => ({ facts: [...state.facts, fact] })),
+  setFact: (fact: Fact) => set((state) => ({ facts: [fact, ...state.facts] })),
   upVote: (id: number) =>
     set((state) => ({
       facts: state.facts.map((f) =>
