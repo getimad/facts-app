@@ -4,6 +4,7 @@ import FactContainer from "./components/FactContainer";
 import FactShare from "./components/FactShare";
 import { useState } from "react";
 import ShareIcon from "./assets/icons/ShareIcon";
+import CategoreyContainer from "./components/CategoryContainer";
 
 function App() {
   const [isFactShareOpen, setIsFactShareOpen] = useState(false);
@@ -13,8 +14,8 @@ function App() {
       <Header />
       <div className="flex font-inter">
         <aside className="w-80">
-          <h3 className="text-2xl font-bold mb-5">Categories</h3>
-          Something
+          <h3 className="text-2xl font-bold mb-7">Categories</h3>
+          <CategoreyContainer />
         </aside>
         <main className="h-full flex-grow">
           <div className="flex justify-between items-center mb-7">
