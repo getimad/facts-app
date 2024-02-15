@@ -7,16 +7,18 @@ interface Props {
 
 function FactItem({ fact }: Props) {
   return (
-    <li className="p-5 border border-green-900 rounded-2xl bg-green-950 flex justify-between items-center mt-3">
-      <p className="w-[30rem]">
-        {fact.content}
-        <a href={fact.source} className="font-bold text-green-800 pl-2">
-          (Source)
-        </a>
-      </p>
-      <span className="flex items-center text-sm bg-green-900 px-5 h-10 rounded-full">
-        {fact.category}
-      </span>
+    <li className="p-5 border border-green-900 rounded-2xl bg-green-950 flex justify-between mt-3">
+      <div className="relative">
+        <p className="w-[40rem] text-sm ">
+          {fact.content}
+          <a href={fact.source} className="font-bold text-green-800 pl-2">
+            (Source)
+          </a>
+        </p>
+        <span className="text-[10px] py-2 rounded-full uppercase font-extrabold absolute -bottom-4">
+          #{fact.category}
+        </span>
+      </div>
       <Vote id={fact.id} />
     </li>
   );
